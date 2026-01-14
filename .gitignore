@@ -1,0 +1,29 @@
+# nRF Connect SDK / Zephyr build artifacts
+build/
+build-*/
+*/build/
+*/build-*/
+*.o
+*.d
+*.cmd
+*.pyc
+*.log
+*.swp
+*~
+
+# Tools and CI outputs
+twister-out*/
+sanity-out*/
+compliance.xml
+*.patch
+
+# Editors / IDEs
+.vscode/
+.idea/
+.cproject
+.project
+tags
+.envrc
+
+# Misc
+~*
