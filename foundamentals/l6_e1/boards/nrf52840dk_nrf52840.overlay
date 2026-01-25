@@ -1,13 +1,14 @@
 /* Step 5.2 Put an overlay content here */
 &i2c0 {
     status = "okay";
+    compatible = "nordic,nrf-twim";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-    mysensor: mysensor@77 {
-        compatible = "i2c-device";
+    bme280: bme280@76 {
+        compatible = "bosch,bme280";
         status = "okay";
-        reg = <0x77>;
+        reg = <0x76>;
     };
 };
 

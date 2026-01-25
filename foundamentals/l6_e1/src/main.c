@@ -26,7 +26,7 @@
 #define SENSOR_CONFIG_VALUE 0x93
 
 /* STEP 6 - Get the node identifier of the sensor */
-#define I2C_NODE DT_NODELABEL(mysensor)
+#define I2C_NODE DT_NODELABEL(bme280)
 
 /* Data structure to store BME280 data */
 struct bme280_data
@@ -81,6 +81,10 @@ int main(void)
 	{
 		printk("I2C bus %s is not ready!\n\r", dev_i2c.bus->name);
 		return -1;
+	}
+	else
+	{
+		printk("I2C bus OK: %s\n", dev_i2c.bus->name);
 	}
 
 	/* STEP 9 - Verify it is proper device by reading device id  */
