@@ -1,0 +1,10 @@
+identifier: devacademyl3e1/nrf52840
+name: DevAcademy L3E1
+vendor: nordic
+type: mcu
+arch: arm
+ram: 256
+flash: 1024
+toolchain:
+  - zephyr
+supported: []
